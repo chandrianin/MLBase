@@ -1,0 +1,95 @@
+Описание набора данных:
+.. _diabetes_dataset:
+
+Diabetes dataset
+----------------
+
+Ten baseline variables, age, sex, body mass index, average blood
+pressure, and six blood serum measurements were obtained for each of n =
+442 diabetes patients, as well as the response of interest, a
+quantitative measure of disease progression one year after baseline.
+
+**Data Set Characteristics:**
+
+:Number of Instances: 442
+
+:Number of Attributes: First 10 columns are numeric predictive values
+
+:Target: Column 11 is a quantitative measure of disease progression one year after baseline
+
+:Attribute Information:
+    - age     age in years
+    - sex
+    - bmi     body mass index
+    - bp      average blood pressure
+    - s1      tc, total serum cholesterol
+    - s2      ldl, low-density lipoproteins
+    - s3      hdl, high-density lipoproteins
+    - s4      tch, total cholesterol / HDL
+    - s5      ltg, possibly log of serum triglycerides level
+    - s6      glu, blood sugar level
+
+Note: Each of these 10 feature variables have been mean centered and scaled by the standard deviation times the square root of `n_samples` (i.e. the sum of squares of each column totals 1).
+
+Source URL:
+https://www4.stat.ncsu.edu/~boos/var.select/diabetes.html
+
+For more information see:
+Bradley Efron, Trevor Hastie, Iain Johnstone and Robert Tibshirani (2004) "Least Angle Regression," Annals of Statistics (with discussion), 407-499.
+(https://web.stanford.edu/~hastie/Papers/LARS/LeastAngle_2002.pdf)
+
+
+Первые 5 строк данных:
+        age       sex       bmi        bp  ...        s4        s5        s6  target
+0  0.038076  0.050680  0.061696  0.021872  ... -0.002592  0.019907 -0.017646   151.0
+1 -0.001882 -0.044642 -0.051474 -0.026328  ... -0.039493 -0.068332 -0.092204    75.0
+2  0.085299  0.050680  0.044451 -0.005670  ... -0.002592  0.002861 -0.025930   141.0
+3 -0.089063 -0.044642 -0.011595 -0.036656  ...  0.034309  0.022688 -0.009362   206.0
+4  0.005383 -0.044642 -0.036385  0.021872  ... -0.002592 -0.031988 -0.046641   135.0
+
+[5 rows x 11 columns]
+
+Статистическая информация:
+                age           sex  ...            s6      target
+count  4.420000e+02  4.420000e+02  ...  4.420000e+02  442.000000
+mean  -2.511817e-19  1.230790e-17  ...  1.130318e-17  152.133484
+std    4.761905e-02  4.761905e-02  ...  4.761905e-02   77.093005
+min   -1.072256e-01 -4.464164e-02  ... -1.377672e-01   25.000000
+25%   -3.729927e-02 -4.464164e-02  ... -3.317903e-02   87.000000
+50%    5.383060e-03 -4.464164e-02  ... -1.077698e-03  140.500000
+75%    3.807591e-02  5.068012e-02  ...  2.791705e-02  211.500000
+max    1.107267e-01  5.068012e-02  ...  1.356118e-01  346.000000
+
+[8 rows x 11 columns]
+
+Матрица корелляции:
+target    1.000000
+bmi       0.586450
+s5        0.565883
+bp        0.441482
+s4        0.430453
+s6        0.382483
+s1        0.212022
+age       0.187889
+s2        0.174054
+sex       0.043062
+s3       -0.394789
+Name: target, dtype: float64
+
+Коэффициенты линейной регрессии (Scikit-Learn):
+  Угловой коэффицент (slope): 949.4353
+  Свободный член (intercept): 152.1335
+
+Коэффициенты линейной регрессии (собственный алгоритм):
+  Угловой коэффициент (slope): 949.4353
+  Свободный член (intercept): 152.1335
+
+Таблица с результатами предсказаний (Scikit-Learn):
+        bmi  Actual  Predicted (Scikit-Learn)
+0  0.061696   151.0                210.710038
+1 -0.051474    75.0                103.262195
+2  0.044451   141.0                194.337033
+3 -0.011595   206.0                141.124769
+4 -0.036385   135.0                117.588574
+
+Process finished with exit code 0
