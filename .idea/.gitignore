@@ -1,0 +1,24 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/.idea/
+# Default ignored files
+/.idea/shelf/
+/.idea/workspace.xml
+# Editor-based HTTP Client requests
+/.idea/httpRequests/
+# Datasource local storage ignored files
+/.idea/dataSources/
+/.idea/dataSources.local.xml
+# Other .idea files to ignore (based on common practice and your list)
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/other.xml
+/.idea/vcs.xml
+# Ignore inspection profiles if they are user-specific
+/.idea/inspectionProfiles/
