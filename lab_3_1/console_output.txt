@@ -1,0 +1,14 @@
+Названия сортов: ['setosa' 'versicolor' 'virginica']
+
+Строим pairplot...
+
+Подготовлены 2 бинарных датасета.
+
+Классификация: setosa vs versicolor
+Точность модели (setosa vs versicolor) 1.0000
+
+Классификация: versicolor vs virginica
+Точность модели (versicolor vs virginica): 0.9200
+
+Классификация случайного датасета
+Точность модели (случайный датасет): 0.9040
